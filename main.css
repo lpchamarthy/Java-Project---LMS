@@ -1,0 +1,110 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Cardo:400,400italic,700);
+
+p {
+  font-size: 14px;
+  line-height: 22.4px;
+  color: #6c7279; }
+
+h1 {
+  font-size: 65px;
+  color: #2d3033; }
+
+h2 {
+  font-size: 40px;
+  color: #2d3033; }
+
+h3 {
+  font-size: 28px;
+  color: #2d3033;
+  font-weight: 300; }
+
+
+.btn
+{
+    background-color: #6600CC;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    border: 0;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+  .btn:hover, .btn:focus {
+    background-color: #45008A;
+    color: #fff; }
+  .btn-large {
+    padding: 15px 40px; }
+a
+{
+    color: #6600CC;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  -moz-transition: background-color, color, 0.3s;
+  -o-transition: background-color, color, 0.3s;
+  -webkit-transition: background-color, color, 0.3s;
+  transition: background-color, color, 0.3s; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #6c7279; }
+
+.headingsyle
+{
+    width: 85%;
+    margin: 0px auto 20px auto;
+}
+.headingsyle h1
+{
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.headingsyle h1 span
+{
+    background: #6600CC;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.headingsyle h1:before
+{
+    background: #6600CC;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.headingsyle h1:before {
+  left: 0;
+}
+  
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 999; }
+  #header .header-content {
+    
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 40px 0;
+    width: 100%;
+    -moz-transition: padding 0.3s;
+    -o-transition: padding 0.3s;
+    -webkit-transition: padding 0.3s;
+    transition: padding 0.3s; }
+

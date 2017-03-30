@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> ITMD-565 Project-1 lchamart APP </title>
+<!-- including CSS to the HTML file -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css"> 
+<!-- including Javascript to the HTML file -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="app.js"> </script>
+</head>
+<body class= "row">
+<div>
+<div id="head" class="jumbotron text-center">
+		<h1 class="header-content "> ITMD-565 Project-1 NOTES </h1>
+		<h2 class="header-content "> Lakshmi Priyanka Chamarthy - lchamart@hawk.iit.edu  </h2>
+</div>
+<div id="messageInput" class="col-md-8 col-md-offset-2">
+        <h2> Add or Edit Note </h2>
+		<table class="table table-bordered">
+		<tr>
+		<td>
+            <label for="message" id="lblMessage"> Message</label>
+		</td>
+		<td>
+            <input type="text" name="Name" id="txtMessage" class="form-control" />
+		</td></tr>
+		<tr><td>
+            <label for="subject" id="lblSubject">Subject</label>
+		</td><td>	
+            <input type="text" name="Subject" id="txtSubject" class="form-control" />
+		</td></tr>
+		<tr><td>
+            <label for="author" id="lblAuthor">Author</label>
+		</td><td>
+            <input type="text" name="Author" id="txtAuthor" class="form-control" />
+		</td></tr>
+		<tr> <td>
+			<button id="btnAddNote" class= "btn" onClick="add();">Add Note</button>
+		</td><td>
+			<button id="btnEditNote" class= "btn" disabled="true">Edit Note</button>
+		</td></tr>
+    </div>
+<div id="list-data">
+		<h3> Number of Notes : <span id="count"></span></h3>
+		<h3 id="reuestNote"> Please Add New Messages To View Them.</h3>
+		<table id="tblNotes" class="table table-striped">
+			<thead>
+				<tr>
+					<th>Subject</th>
+					<th>Length of Message</th>
+					<th>Time</th>
+					<th colspan="2"></th>
+				</tr>
+			</thead>
+			<tbody id="tblBody">
+				
+			</tbody>
+		</table>
+</div>	
+<div id="noteDiv" class="col-md-8 col-md-offset-2">
+	<p id="noteDetail"></p>
+</div>	
+</div>	
+</body>
+</html>
